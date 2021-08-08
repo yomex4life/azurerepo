@@ -41,10 +41,10 @@ stages:
     - group: TerraformEnvVars
     steps: 
     - script: |
-      set -e
+       set -e
 
-      terraform init -input=false
-      terraform apply -input=false -auto-approve
+       terraform init -input=false
+       terraform apply -input=false -auto-approve
     name: 'Run Terraform'
     displayName: "Run Terraform"
     env:
